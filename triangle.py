@@ -4,7 +4,7 @@ import numpy
 
 class Ui_TriangleWindow(object):
     def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
+        MainWindow.setObjectName("Triangle")
         MainWindow.resize(1000, 900)
         MainWindow.setMinimumSize(QtCore.QSize(1000, 900))
         MainWindow.setMaximumSize(QtCore.QSize(1000, 900))
