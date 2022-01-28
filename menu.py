@@ -3,31 +3,31 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
+        MainWindow.setObjectName("GeometryCalc")
         MainWindow.resize(1000, 600)
         MainWindow.setMinimumSize(QtCore.QSize(1000, 900))
         MainWindow.setMaximumSize(QtCore.QSize(1000, 900))
         MainWindow.setStyleSheet("margin: 0;\n"
-"padding: 0;\n"
-"border: none")
+                                 "padding: 0;\n"
+                                 "border: none")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setStyleSheet("* {\n"
-"    background-color: silver;\n"
-"    color: black;\n"
-"    border: none\n"
-"}\n"
-"\n"
-"QPushButton {\n"
-"    background-color: LightSlateGray;\n"
-"    border-radius: 5px;\n"
-"}\n"
-"QPushButton:hover{\n"
-"    background-color: LightGray;\n"
-"}\n"
-"\n"
-"QPushButton:pressed{\n"
-"    background-color: grey;\n"
-"}")
+                                         "    background-color: silver;\n"
+                                         "    color: black;\n"
+                                         "    border: none\n"
+                                         "}\n"
+                                         "\n"
+                                         "QPushButton {\n"
+                                         "    background-color: LightSlateGray;\n"
+                                         "    border-radius: 5px;\n"
+                                         "}\n"
+                                         "QPushButton:hover{\n"
+                                         "    background-color: LightGray;\n"
+                                         "}\n"
+                                         "\n"
+                                         "QPushButton:pressed{\n"
+                                         "    background-color: grey;\n"
+                                         "}")
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout.setObjectName("verticalLayout")
@@ -165,7 +165,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "GeometryCalc"))
         self.label_2.setText(_translate("MainWindow", "Menu"))
         self.label.setText(_translate("MainWindow", "Geometric Calculator"))
         self.pushButton_2.setText(_translate("MainWindow", "Triangle"))
@@ -173,5 +173,3 @@ class Ui_MainWindow(object):
         self.pushButton_3.setText(_translate("MainWindow", " Parallelogram"))
         self.pushButton_4.setText(_translate("MainWindow", "Circle(soon)"))
         self.pushButton_5.setText(_translate("MainWindow", "Trapezoid(soon)"))
-
-
