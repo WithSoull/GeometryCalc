@@ -3,7 +3,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_RectangleWindow(object):
     def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
+        MainWindow.setObjectName("Rectangle")
         MainWindow.resize(1000, 900)
         MainWindow.setMinimumSize(QtCore.QSize(1000, 900))
         MainWindow.setMaximumSize(QtCore.QSize(1000, 900))
@@ -504,7 +504,7 @@ class Ui_RectangleWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Rectangle"))
         self.label_2.setText(_translate("MainWindow", "Rectangle"))
         self.label.setText(_translate("MainWindow", "Geometric Calculator"))
         self.checkBox_3.setText(_translate("MainWindow", "Square"))
@@ -523,7 +523,7 @@ class Ui_RectangleWindow(object):
         self.pushButton.setText(_translate("MainWindow", "Menu"))
 
     def errors(self):
-        self.label_3.setPixmap(QtGui.QPixmap("C:/Coding/Python/PyQt5/Calc/Images/error.png"))
+        self.label_3.setPixmap(QtGui.QPixmap("../Images/error.png"))
         self.pushButton_2.hide()
 
     def nullify(self):
