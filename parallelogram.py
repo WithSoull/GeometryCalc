@@ -4,7 +4,7 @@ import math
 
 class Ui_ParallelogramWindow(object):
     def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
+        MainWindow.setObjectName("Parallelogram")
         MainWindow.resize(1000, 900)
         MainWindow.setMinimumSize(QtCore.QSize(1000, 900))
         MainWindow.setMaximumSize(QtCore.QSize(1000, 900))
@@ -658,7 +658,7 @@ class Ui_ParallelogramWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Parallelogram"))
         self.label_2.setText(_translate("MainWindow", "Parallelogram"))
         self.label.setText(_translate("MainWindow", "Geometric Calculator"))
         self.checkBox_3.setText(_translate("MainWindow", "Rhombus"))
@@ -683,7 +683,7 @@ class Ui_ParallelogramWindow(object):
         self.pushButton.setText(_translate("MainWindow", "Menu"))
 
     def errors(self):
-        self.label_3.setPixmap(QtGui.QPixmap("C:/Coding/Python/PyQt5/Calc/Images/error.png"))
+        self.label_3.setPixmap(QtGui.QPixmap("../Images/error.png"))
         self.pushButton_2.hide()
 
     def nullify(self):
@@ -824,7 +824,7 @@ class Ui_ParallelogramWindow(object):
         fl_P = P != float(self.lineEdit_5.text()) and float(self.lineEdit_5.text()) != 0
         if fl_a or fl_b or fl_d1 or fl_h2 or fl_h2 or fl_d2 or fl_P or fl_S:
             self.errors()
-            return 
+            return
         self.lineEdit.setText(str(round(a, 4)))
         self.lineEdit_2.setText(str(round(b, 4)))
         self.lineEdit_3.setText(str(round(d1, 4)))
